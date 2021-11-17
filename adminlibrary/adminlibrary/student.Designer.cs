@@ -301,11 +301,11 @@ namespace adminlibrary
             // DGV_student
             // 
             this.DGV_student.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_student.Location = new System.Drawing.Point(6, 53);
+            this.DGV_student.Location = new System.Drawing.Point(6, 21);
             this.DGV_student.Name = "DGV_student";
             this.DGV_student.RowHeadersWidth = 51;
             this.DGV_student.RowTemplate.Height = 24;
-            this.DGV_student.Size = new System.Drawing.Size(939, 114);
+            this.DGV_student.Size = new System.Drawing.Size(939, 146);
             this.DGV_student.TabIndex = 1;
             this.DGV_student.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_student_CellContentClick);
             // 

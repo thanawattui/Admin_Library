@@ -18,7 +18,7 @@ namespace adminlibrary
             InitializeComponent();
         }
 
-        //string strConn = "provider=Microsoft.ACE.OLEDB.12.0;data source=../../../../student.accdb";
+        //string strConn= "provider=Microsoft.ACE.OLEDB.12.0;data source=../../../../student.accdb";
         public string sql;
         OleDbCon/*nection Conn = new OleDbConnection();*/
         OleDbDataAdapter da;
@@ -34,7 +34,7 @@ namespace adminlibrary
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void student_Load(object sender, EventArgs e)
@@ -97,7 +97,7 @@ namespace adminlibrary
 
         private void DGV_student_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex == DGV_student.Rows.Count - 1)
+            if (e.RowIndex == DGV_student.Rows.Count -1)
             {
                 return;
             }
@@ -106,10 +106,10 @@ namespace adminlibrary
                 txt_id.Text = DGV_student.Rows[e.RowIndex].Cells[0].Value.ToString();
                 txt_name.Text = DGV_student.Rows[e.RowIndex].Cells[1].Value.ToString();
                 txt_surname.Text = DGV_student.Rows[e.RowIndex].Cells[2].Value.ToString();
-                txt_status.Text = DGV_student.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txt_status .Text = DGV_student.Rows[e.RowIndex].Cells[3].Value.ToString();
                 txt_group .Text = DGV_student.Rows[e.RowIndex].Cells[4].Value.ToString();
                 txt_branch .Text = DGV_student.Rows[e.RowIndex].Cells[5].Value.ToString();
-                dtp_day .Value = Convert.ToDateTime(DGV_student.Rows[e.RowIndex].Cells[6].Value.ToString());
+                dtp_day.Value = Convert.ToDateTime(DGV_student.Rows[e.RowIndex].Cells[6].Value.ToString());
                 txt_address .Text = DGV_student.Rows[e.RowIndex].Cells[7].Value.ToString();
                 txt_zip .Text = DGV_student.Rows[e.RowIndex].Cells[8].Value.ToString();
                 txt_phone .Text = DGV_student.Rows[e.RowIndex].Cells[9].Value.ToString();
@@ -118,7 +118,8 @@ namespace adminlibrary
             catch
             {
                 MessageBox.Show("เกิดข้อผิดพลาด");
-            }
+            }        
+            
         }
     }
 }
