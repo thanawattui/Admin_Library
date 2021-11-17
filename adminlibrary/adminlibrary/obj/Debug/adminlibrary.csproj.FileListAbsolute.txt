@@ -1,0 +1,14 @@
+D:\105\adminlibrary\adminlibrary\bin\Debug\adminlibrary.exe.config
+D:\105\adminlibrary\adminlibrary\bin\Debug\adminlibrary.exe
+D:\105\adminlibrary\adminlibrary\bin\Debug\adminlibrary.pdb
+D:\105\adminlibrary\adminlibrary\obj\Debug\adminlibrary.csproj.AssemblyReference.cache
+D:\105\adminlibrary\adminlibrary\obj\Debug\adminlibrary.Properties.Resources.resources
+D:\105\adminlibrary\adminlibrary\obj\Debug\adminlibrary.csproj.GenerateResource.cache
+D:\105\adminlibrary\adminlibrary\obj\Debug\adminlibrary.csproj.CoreCompileInputs.cache
+D:\105\adminlibrary\adminlibrary\obj\Debug\adminlibrary.exe
+D:\105\adminlibrary\adminlibrary\obj\Debug\adminlibrary.pdb
+D:\105\adminlibrary\adminlibrary\obj\Debug\adminlibrary.login.resources
+D:\105\adminlibrary\adminlibrary\obj\Debug\adminlibrary.Welcome.resources
+D:\105\adminlibrary\adminlibrary\obj\Debug\adminlibrary.student.resources
+D:\105\adminlibrary\adminlibrary\obj\Debug\adminlibrary.borrow.resources
+D:\105\adminlibrary\adminlibrary\obj\Debug\adminlibrary.teacher.resources
