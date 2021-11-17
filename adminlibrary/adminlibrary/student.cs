@@ -18,9 +18,9 @@ namespace adminlibrary
             InitializeComponent();
         }
 
-        //string strConn = "provider=Microsoft.ACE.OLEDB.12.0;data source=../../../../student.accdb";
+        string strConn = "provider=Microsoft.ACE.OLEDB.12.0;data source=../../../../student.accdb";
         public string sql;
-        OleDbCon/*nection Conn = new OleDbConnection();*/
+        OleDbConnection Conn = new OleDbConnection();
         OleDbDataAdapter da;
         DataSet ds = new DataSet();
         bool IsFind = false;
@@ -39,7 +39,12 @@ namespace adminlibrary
 
         private void student_Load(object sender, EventArgs e)
         {
-            CallCenter.openConnection();
+            if (Conn.State == ConnectionState.Open)
+            {
+                Conn.Close();
+            }
+            Conn.ConnectionString = strConn;
+            Conn.Open();
 
             showAllData();
         }
@@ -51,7 +56,7 @@ namespace adminlibrary
             {
                 ds.Tables["student"].Clear();
             }
-            da = new OleDbDataAdapter(sqlStu, CallCenter.conn);
+            da = new OleDbDataAdapter(sqlStu, Conn);
             da.Fill(ds, "student");
             if (ds.Tables["student"].Rows.Count != 0)
             {
